@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: hostname
+# Cookbook Name:: modcloth-hostname
 # Recipe:: ubuntu
 #
 # Copyright ModCloth, Inc.
@@ -14,4 +14,3 @@ end
 execute "Setting Hostname" do
   command "sed -i -e 's/HOSTNAME\=localhost.localdomain/HOSTNAME\=#{node.name}/g' /etc/sysconfig/network"
 end
-

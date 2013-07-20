@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: hostname
+# Cookbook Name:: modcloth-hostname
 # Recipe:: ubuntu
 #
 # Copyright ModCloth, Inc.
@@ -20,4 +20,3 @@ template "/etc/hostname" do
   source "nodename.erb"
   mode "0644"
 end
-

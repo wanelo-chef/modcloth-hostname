@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: hostname
+# Cookbook Name:: modcloth-hostname
 # Recipe:: default
 #
 # Copyright ModCloth, Inc.
@@ -9,10 +9,9 @@
 
 case node["platform"]
 when 'smartos'
-  include_recipe "hostname::smartos"
+  include_recipe "modcloth-hostname::smartos"
 when 'centos'
-  include_recipe "hostname::centos"
-else 'ubuntu'
-  include_recipe "hostname::ubuntu"
+  include_recipe "modcloth-hostname::centos"
+when 'ubuntu'
+  include_recipe "modcloth-hostname::ubuntu"
 end
-

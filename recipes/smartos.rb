@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: hostname
+# Cookbook Name:: modcloth-hostname
 # Recipe:: smartos
 #
 # Copyright ModCloth, Inc.
