@@ -1,5 +1,4 @@
 # Dropped off by Chef, do not edit.
 
-127.0.0.1	localhost       
-<%= node[:privateaddress] %>	<%= node.name %>	
-
+127.0.0.1	localhost
+<%= node[:privateaddress] %> <%= node.name %> <%= node.name.split('.').first rescue '' %>

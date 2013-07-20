@@ -20,4 +20,3 @@ template "/etc/nodename" do
   source "nodename.erb"
   mode "0644"
 end
-
