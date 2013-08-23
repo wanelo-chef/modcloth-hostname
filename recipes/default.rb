@@ -15,3 +15,7 @@ when 'centos'
 when 'ubuntu'
   include_recipe "modcloth-hostname::ubuntu"
 end
+
+ohai "reload" do
+  action :reload
+end
