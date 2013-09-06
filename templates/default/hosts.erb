@@ -1,4 +1,5 @@
-# Dropped off by Chef, changes will be lost
+# Dropped off by Chef for <%= node.name %>
+# changes will be lost
 
 127.0.0.1	localhost
-<%= node[:privateaddress] %> <%= node.name %> <%= node.name.split('.').first rescue '' %>
+<%= node['privateaddress'] %> <%= node.name %> <%= node.name.split('.').first rescue '' %>
