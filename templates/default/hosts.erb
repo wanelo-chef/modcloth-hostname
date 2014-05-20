@@ -1,4 +1,4 @@
 # Dropped off by Chef, changes will be lost
 
 127.0.0.1	localhost
-<%= node[:privateaddress] %> <%= node.name %> <%= node.name.split('.').first rescue '' %>
+<%= node['modcloth-hostname']['host_IP'] %>  <%= node.name %> <%= node.name.split('.').first rescue '' %>
