@@ -2,4 +2,4 @@
 # changes will be lost
 
 127.0.0.1	localhost
-<%= node['privateaddress'] %> <%= node.name %> <%= node.name.split('.').first rescue '' %>
+<%= node['modcloth_hostname']['ip'] %> <%= node.name %> <%= node.name.split('.').first rescue '' %>
